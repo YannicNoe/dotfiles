@@ -1,0 +1,1 @@
+STRING="if [ -f "$HOME/.config/aliases.d/bash.sh" ]; then . $HOME/.config/aliases.d/bash.sh; fi"
