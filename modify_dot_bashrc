@@ -1,1 +1,4 @@
-STRING="if [ -f "$HOME/.config/aliases.d/bash.sh" ]; then . $HOME/.config/aliases.d/bash.sh; fi"
+if ! grep -Fxq 'if [ -f "$HOME/.config/entry.d/bash.sh" ]; then . $HOME/.config/entry.d/bash.sh; fi' $HOME/.bashrc ; then 
+  echo 'if [ -f "$HOME/.config/entry.d/bash.sh" ]; then . $HOME/.config/entry.d/bash.sh; fi' >> $HOME/.bashrc ; 
+fi
+
